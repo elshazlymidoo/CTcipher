@@ -8,8 +8,8 @@ public class ColumnarEncrypter {
         String plainText = "hello i am a cat meow cat cat meow$helloasdfsdfgsd";
         System.out.println("The cipherText is :" +toCipherText(plainText));
     }
-    
 //-----------------------------------------------------------------------------
+    
     private static char[][] toCharBlock(String plainText) {
         char[][] charArray = new char[noOfRows][noOfColumns];
         int lengthOfString = plainText.length();
