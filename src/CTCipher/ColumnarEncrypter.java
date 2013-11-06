@@ -1,20 +1,21 @@
 package CTCipher;
 
-public class ColumnarEncrypter extends randomIntArray{
+public class ColumnarEncrypter {
     private static int noOfColumns = 10;
     private static int noOfRows = 5;
     
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        String plainText = "hello i am a cat meow cat cat meow$helloasdfsdfgsd";
 //        int[] key = randomIntArray(noOfColumns);
 //        System.out.println("The cipherText is :" +toCipherText(plainText, key));
-    }
+//    }
 //-----------------------------------------------------------------------------    
     
     private static char[][] toCharBlock(String plainText) {
         char[][] charArray = new char[noOfRows][noOfColumns];
         int lengthOfString = plainText.length();
         //System.out.println("length of string is "+lengthOfString);
+        
         // Converting plainText into Block(s) of plainText
         int counter = 0;
         for (int row = 0; row < noOfRows; row++) {
@@ -27,7 +28,7 @@ public class ColumnarEncrypter extends randomIntArray{
             }
         }
         
-        //printBlock(charArray);
+        printBlock(charArray);
         return charArray;
     }
 //-----------------------------------------------------------------------------

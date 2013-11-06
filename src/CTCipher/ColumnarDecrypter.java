@@ -6,10 +6,10 @@ public class ColumnarDecrypter {
     private static int noOfColumns = 10;
     private static int noOfRows = 5;
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
 //        String cipherText = "ea eslcawfaetlsh wmaoat$s malg t hdi cefmo odl cod";
-//        System.out.println(toPlainText(cipherText));
-    }
+//        System.out.println(toPlainText(cipherText,randomIntArray.randomIntArray(noOfColumns)));
+//    }
     //----------------------------------------------------------------------------- 
     public static String toPlainText(String cipherText, int[] key) {
         StringBuilder cipherTextString = new StringBuilder();
